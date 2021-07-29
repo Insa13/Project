@@ -12,7 +12,7 @@ while True:
     while (id != int(atm.checkPin())and trial < 3):
         id = int(input("Pin and salah. Silakan Masukkan lagi: "))
         trial += 1
-
+        break
         if trial == 3 : 
             print("Error. Silakan ambil kartu dan coba lagi..")
             exit()
@@ -61,6 +61,7 @@ while True:
                 print("pin baru anda sukses!")
             else:
                 print("maaf, pin anda salah!")
+                break
 
         elif select_menu == 5:
             print("Resi tercetak otomatis saat anda keluar. \n Harap simpan tanda terima ini \n sebagai bukti transaksi anda.")
